@@ -10,35 +10,271 @@
     <link rel="stylesheet" href="./output.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header>
+  <body class="bg-primary-color">
+    <!-- header start -->
+
+    <header class="h-auto w-full bg-primary-color">
+      <!-- header section start -->
+
       <section>
-        <div class="bg-primary-color">
+        <div
+          class="relative mx-auto flex w-5/6 items-center justify-between py-4 text-white"
+        >
           <div
-            class="container mx-auto flex items-center justify-between py-4 text-white"
+            class="flex cursor-pointer items-center justify-center gap-2 font-bold"
           >
-            <div class="flex items-center justify-center gap-2 font-bold">
-              <i class="bi bi-alt text-xl"></i>
-              <h1 class="text-xl font-bold">Knowadays</h1>
-            </div>
-            <div class="flex gap-2 font-thin ">
-              <a href="index.html">Courses</a>
-              <a href="costumer.html">Success Stories</a>
-              <a href="product.html">Guranteed Work</a>
-              <a href="about.html">Resources</a>
-              <a href="blog.html">Blog</a>
-            </div>
-            <div
-              class="flex items-center justify-center gap-10 text-lg font-thin"
+            <i class="bi bi-alt text-xl"></i>
+            <h1 class="text-xl font-bold">Knowadays</h1>
+          </div>
+          <div
+            class="absolute -bottom-full flex h-full w-full items-center justify-center gap-2 bg-primary-color text-xs font-bold md:text-sm lg:relative lg:block lg:h-auto lg:w-auto lg:text-base lg:font-thin"
+          >
+            <a
+              class="w-full text-center hover:font-thin lg:mx-2 lg:hover:font-bold"
+              href="index.html"
+              >Courses</a
             >
-              <a href="#">Sign in</a>
-              <a class="rounded-full bg-green-400 px-4 py-2 text-black" href="#"
-                >Try For Free</a
+            <a
+              class="w-full text-center hover:font-thin lg:mx-2 lg:hover:font-bold"
+              href="costumer.html"
+              >Success Stories</a
+            >
+            <a
+              class="w-full text-center hover:font-thin lg:mx-2 lg:hover:font-bold"
+              href="product.html"
+              >Guranteed Work</a
+            >
+            <a
+              class="w-full text-center hover:font-thin lg:mx-2 lg:hover:font-bold"
+              href="about.html"
+              >Resources</a
+            >
+            <a
+              class="w-full text-center hover:font-thin lg:mx-2 lg:hover:font-bold"
+              href="blog.html"
+              >Blog</a
+            >
+          </div>
+          <div
+            class="flex items-center justify-center gap-2 text-sm font-thin md:gap-10 md:text-lg"
+          >
+            <a class="hover:text-cyan-300" href="#">Sign in</a>
+            <a
+              class="rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
+              href="#"
+              >Try For Free</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- header section end -->
+    </header>
+
+    <!-- header end -->
+
+    <!-- main start -->
+
+    <main class="bg-primary-color">
+      <!-- first section start -->
+
+      <section>
+        <div
+          class="bgphoto1 mx-auto flex w-5/6 flex-col items-center justify-end py-3 text-white"
+        >
+          <h1
+            class="mb-5 w-4/6 text-center text-3xl font-bold md:text-5xl md:font-normal"
+          >
+            Kick-start your career with our expert courses
+          </h1>
+          <a
+            href="#"
+            class="mb-10 mt-7 rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
+            >Try for free</a
+          >
+        </div>
+      </section>
+
+      <!-- first section end -->
+
+      <!-- second section start -->
+
+      <section>
+        <div class="mx-auto w-5/6 py-5 text-white">
+          <h1 class="mb-3 text-3xl md:text-5xl">Our Most popular Courses</h1>
+          <p class="text-base md:text-lg">
+            World-class proofreading and editing courses with guranteed work.
+          </p>
+        </div>
+      </section>
+
+      <!-- second section end -->
+
+      <!-- third section start -->
+
+      <section class="mx-auto w-5/6 text-white">
+        <div class="columns-2">
+          <div class="w-full">
+            <div class="bgphoto2">
+              <div
+                class="mx-auto flex h-80 w-5/6 flex-col items-center justify-center text-center"
               >
+                <h1 class="my-3 text-2xl md:text-5xl">
+                  Becoming An Proofreader
+                </h1>
+                <p>Guranteed work - Online courses</p>
+              </div>
+            </div>
+            <div class="bg-white py-5 text-black">
+              <div class="mx-auto w-5/6 justify-between md:flex">
+                <h1
+                  class="block cursor-pointer text-center md:inline-block md:text-start"
+                >
+                  $399
+                </h1>
+                <div>
+                  <a
+                    class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 md:inline-block"
+                    href="#"
+                    >Learn More</a
+                  >
+                  <a
+                    class="my-3hover:bg-secondary-color block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:text-cyan-300 md:inline-block"
+                    href="#"
+                    >Try for free</a
+                  >
+                </div>
+              </div>
+              <div class="mx-auto flex w-5/6 justify-end pb-7 pt-5">
+                <p>
+                  Buy now pay later with <a href="#" class="font-bold">Klama</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="bgphoto3">
+              <div
+                class="mx-auto flex h-80 w-5/6 flex-col items-center justify-center text-center"
+              >
+                <h1 class="my-3 text-2xl md:text-5xl">Becoming An Editor</h1>
+                <p>Enhanced opportunities - Online courses</p>
+              </div>
+            </div>
+            <div class="bg-white py-5 text-black">
+              <div class="mx-auto w-5/6 justify-between md:flex">
+                <h1
+                  class="block cursor-pointer text-center md:inline-block md:text-start"
+                >
+                  $399
+                </h1>
+                <div>
+                  <a
+                    class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 md:inline-block"
+                    href="#"
+                    >Learn More</a
+                  >
+                  <a
+                    class="my-3hover:bg-secondary-color block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:text-cyan-300 md:inline-block"
+                    href="#"
+                    >Try for free</a
+                  >
+                </div>
+              </div>
+              <div class="mx-auto flex w-5/6 justify-end pb-7 pt-5">
+                <p>
+                  Buy now pay later with <a href="#" class="font-bold">Klama</a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </header>
+
+      <!-- third section end -->
+
+      <!-- fourth section start -->
+
+      <section class="bg-primary-color">
+        <div class="mx-auto w-5/6 py-5">
+          <div class="block h-full w-full lg:flex lg:h-75vh">
+            <div class="bgphoto4 w-full py-64 lg:h-full lg:w-3/5 lg:py-0">
+              <div
+                class="flex h-full w-full flex-col items-center justify-center text-xl text-yellow-200 md:text-3xl lg:text-4xl"
+              >
+                <h1>15% off</h1>
+                <h1>Proofreader and Editor</h1>
+                <h1>Course Bundle</h1>
+                <p class="my-2 text-base md:text-lg">
+                  Becoming A Proofreader - Becoming An Editor
+                </p>
+              </div>
+            </div>
+            <div class="h-auto w-full bg-yellow-200 p-3 lg:h-full lg:w-2/5">
+              <div class="my-3 md:text-xl">
+                <h1 class="font-bold">
+                  <span class="mx-2 font-normal">$789</span>$678
+                </h1>
+              </div>
+              <h1 class="text-xl md:text-2xl">The Bundle</h1>
+              <ul class="mx-auto my-5 w-5/6 list-inside list-disc">
+                <li>Guranteed editing work with our patner, proofed.</li>
+                <li>
+                  industry leading courses devolped by professionals for
+                  professionals
+                </li>
+                <li>One-on-one support from our best in-class tutot team</li>
+              </ul>
+              <h1 class="mb-3 text-xl font-bold text-black">
+                <i class="bi bi-star-fill me-1 text-yellow-500"></i>Trustpilot
+              </h1>
+              <div class="text-white">
+                <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
+                <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
+                <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
+                <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
+                <i class="bi bi-star-half bg-yellow-500 p-2"></i>
+              </div>
+              <h2 class="mb-5 mt-3 font-bold">TrustScore 4.7 | 417 reviews</h2>
+              <div>
+                <a
+                  class="mx-1 rounded-full border border-primary-color bg-primary-color px-4 py-2 text-yellow-200 hover:bg-secondary-color"
+                  href="#"
+                  >Buy Now</a
+                >
+                <a
+                  class="mx-1 rounded-full border border-primary-color px-4 py-2 hover:bg-yellow-100"
+                  href="#"
+                  >Learn More</a
+                >
+              </div>
+              <p class="mb-3 mt-5 cursor-pointer">
+                Buy now pay later with <a href="#" class="font-bold">Klama</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fourth section end -->
+
+      <!-- fifth section start -->
+
+      <section class="my-5">
+        <div class="mx-auto w-5/6 text-white">
+          <h1 class="my-3 text-3xl md:text-4xl lg:text-5xl">
+            It's Knowadays Or Never
+          </h1>
+          <p class="my-3 text-base lg:text-lg">
+            providing industry-leading courses that deliver new way of working.
+          </p>
+          <a class="bg-yellow-200 px-4 py-2 rounded-full  text-black" href="#">Try for free</a>
+        </div>
+      </section>
+
+      <!-- fifth section end -->
+    </main>
+
+    <!-- main end  -->
   </body>
 </html>

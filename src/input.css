@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bgphoto1 {
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../output/image/indexphoto/indexphoto1.avif");
+  height: 100svh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bgphoto2 {
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../output/image/indexphoto/indexphoto2.avif");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bgphoto3 {
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../output/image/indexphoto/indexphoto3.avif");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.bgphoto4 {
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("../output/image/indexphoto/indexphoto4.avif");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

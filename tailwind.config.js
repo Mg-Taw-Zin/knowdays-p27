@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       colors: {
         "primary-color": "#204d52",
+        "secondary-color": "#204d45",
+      },
+      height: {
+        "75vh": "75vh",
+        "150vh": "150vh",
       },
     },
   },
