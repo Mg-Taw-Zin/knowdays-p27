@@ -8,7 +8,7 @@ module.exports = {
         "secondary-color": "#204d45",
       },
       height: {
-        "75vh": "75vh",
+        "75vh": "85vh",
         "150vh": "150vh",
       },
     },
