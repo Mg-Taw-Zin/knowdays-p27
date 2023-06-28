@@ -9,12 +9,13 @@ module.exports = {
         "thirdary-color": "#adcfff",
       },
       height: {
-        "75vh": "100vh",
+        "50vh": "50vh",
+        "75vh": "75vh",
+        "100vh": "100vh",
         "150vh": "150vh",
-   
       },
-      width:{
-        "300px":"300px",
+      width: {
+        "300px": "300px",
       },
     },
   },
