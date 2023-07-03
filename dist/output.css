@@ -1098,37 +1098,37 @@ video {
 
 .bgphoto1 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/indexphoto/indexphoto1.avif") !important;
+    url("../dist/image/indexphoto/indexphoto1.avif");
 }
 
 .bgphoto2 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/indexphoto/indexphoto2.avif") !important;
+    url("../dist/image/indexphoto/indexphoto2.avif");
 }
 
 .bgphoto3 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/indexphoto/indexphoto3.avif") !important;
+    url("../dist/image/indexphoto/indexphoto3.avif");
 }
 
 .bgphoto4 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/indexphoto/indexphoto4.avif") !important;
+    url("../dist/image/indexphoto/indexphoto4.avif");
 }
 
 .bgphoto5 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/blogphoto/blogphoto1.avif") !important;
+    url("../dist/image/blogphoto/blogphoto1.avif");
 }
 
 .bgphoto6 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/blogphoto/blogphoto2.avif") !important;
+    url("../dist/image/blogphoto/blogphoto2.avif");
 }
 
 .bgphoto7 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../dist/image/blogphoto/blogphoto3.avif") !important;
+    url("../dist/image/blogphoto/blogphoto3.avif");
 }
 
 .hover\:bg-cyan-500:hover {
