@@ -976,6 +976,10 @@ video {
   vertical-align: middle;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1096,10 +1100,10 @@ video {
   background-size: cover !important;
 }
 
-.bgphoto1 {
+/* .bgphoto1 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../dist/image/indexphoto/indexphoto1.avif");
-}
+} */
 
 .bgphoto2 {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
