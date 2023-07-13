@@ -17,53 +17,51 @@
       <!-- header section start -->
 
       <section>
-        <div
-          class="relative mx-auto flex w-5/6 items-center justify-between py-4 text-white"
-        >
+        <div class="fixed h-auto w-full">
           <div
-            class="flex cursor-pointer items-center justify-center gap-2 font-bold"
+            class="relative mx-auto flex w-11/12 items-center justify-between bg-primary-color py-4 text-white md:w-5/6"
           >
-            <i class="bi bi-alt text-xl"></i>
-            <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
-          </div>
-          <div
-            class="absolute -bottom-full flex h-full w-full items-center justify-center gap-2 bg-primary-color text-xs md:text-sm lg:relative lg:block lg:h-auto lg:w-auto lg:text-base lg:font-thin"
-          >
-            <a
-              class="l w-full text-center hover:text-gray-300 lg:mx-2"
-              href="index.html"
-              >Courses</a
+            <div
+              class="flex cursor-pointer items-center justify-center gap-2 font-bold"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="costumer.html"
-              >Success Stories</a
+              <i class="bi bi-alt text-sm sm:text-lg"></i>
+              <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
+            </div>
+            <div id="nav-button">
+              <button class="hover:text-gray-300">
+                <i class="bi bi-list sm:text-xl md:hidden"></i>
+              </button>
+            </div>
+            <div
+              class="absolute top-full flex w-full translate-x-full flex-col bg-primary-color text-base duration-200 ease-in-out md:relative md:block md:w-auto md:translate-x-0 md:text-sm lg:text-base lg:font-thin"
+              id="nav-toggle"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="product.html"
-              >Guranteed Work</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="about.html"
-              >Resources</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="blog.html"
-              >Blog</a
-            >
-          </div>
-          <div
-            class="flex items-center justify-center gap-2 text-xs font-thin sm:text-sm md:gap-10 md:text-lg"
-          >
-            <a class="hover:text-cyan-300" href="#">Sign in</a>
-            <a
-              class="rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
-              href="#"
-              >Try For Free</a
-            >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="index.html"
+                >Courses</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="costumer.html"
+                >Success Stories</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="product.html"
+                >Guranteed Work</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="about.html"
+                >Resources</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -73,22 +71,22 @@
 
     <!-- header end -->
 
-    <main>
+    <main id="top">
       <!-- first main section start -->
 
       <section>
         <div
           style="background-image: url(./image/indexphoto/indexphoto1.avif)"
-          class="mx-auto flex h-100vh w-5/6 flex-col items-center justify-end bg-cover bg-center bg-no-repeat py-3 text-white"
+          class="mx-auto flex h-100vh w-11/12 flex-col items-center justify-center bg-sky-950 bg-cover bg-center bg-no-repeat py-3 text-white sm:justify-end md:w-5/6"
         >
           <h1
-            class="mb-5 w-4/6 text-center text-3xl font-bold md:text-5xl md:font-normal"
+            class="mb-5 w-4/6 py-5 text-center text-3xl font-bold md:text-5xl md:font-normal"
           >
             Kick-start your career with our expert courses
           </h1>
           <a
             href="#"
-            class="mb-10 mt-7 rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
+            class="mb-10 mt-5 rounded-full bg-green-400 px-2 py-1 text-black shadow-xl hover:bg-green-500 hover:text-white md:mt-7 lg:px-4 lg:py-1"
             >Try for free</a
           >
         </div>
@@ -100,8 +98,8 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6 text-white">
-            <h1 class="mb-3 text-3xl md:text-4xl lg:text-5xl">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl">
               Our Most popular Courses
             </h1>
             <p class="my-3 text-sm font-thin md:text-lg lg:my-7">
@@ -116,7 +114,7 @@
       <!-- third main section start -->
 
       <section>
-        <div class="mx-auto w-5/6 text-white">
+        <div class="mx-auto w-11/12 text-white md:w-5/6">
           <div class="columns-1 lg:columns-2">
             <div class="mb-3 w-full">
               <div
@@ -143,12 +141,12 @@
                   </h1>
                   <div>
                     <a
-                      class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 lg:inline-block"
+                      class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 md:inline-block"
                       href="#"
                       >Learn More</a
                     >
                     <a
-                      class="my-3 block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:bg-secondary-color hover:text-cyan-300 lg:inline-block"
+                      class="my-3 block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:bg-secondary-color hover:text-cyan-300 md:inline-block"
                       href="#"
                       >Try for free</a
                     >
@@ -185,12 +183,12 @@
                   </h1>
                   <div>
                     <a
-                      class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 lg:inline-block"
+                      class="my-3 me-1 block rounded-full border border-black px-4 py-2 hover:bg-cyan-500 md:inline-block"
                       href="#"
                       >Learn More</a
                     >
                     <a
-                      class="my-3 block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:bg-secondary-color hover:text-cyan-300 lg:inline-block"
+                      class="my-3 block rounded-full border border-primary-color bg-primary-color px-4 py-2 text-white hover:bg-secondary-color hover:text-cyan-300 md:inline-block"
                       href="#"
                       >Try for free</a
                     >
@@ -214,7 +212,7 @@
 
       <section>
         <div class="bg-primary-color">
-          <div class="mx-auto w-5/6 py-5">
+          <div class="mx-auto w-11/12 py-5 md:w-5/6">
             <div class="block h-full w-full lg:flex lg:h-100vh">
               <div
                 style="
@@ -223,24 +221,24 @@
                 class="w-full bg-cover bg-center bg-no-repeat py-64 lg:h-full lg:w-3/5 lg:py-0"
               >
                 <div
-                  class="flex h-full w-full flex-col items-center justify-center text-xl text-yellow-200 md:text-3xl lg:text-4xl"
+                  class="flex h-full w-full flex-col items-center justify-center text-xl text-yellow-200 sm:text-2xl md:text-3xl lg:text-4xl"
                 >
                   <h1>15% off</h1>
                   <h1>Proofreader and Editor</h1>
                   <h1>Course Bundle</h1>
-                  <p class="my-2 text-center text-base md:text-lg">
+                  <p class="my-2 text-center text-base md:text-xl">
                     Becoming A Proofreader - Becoming An Editor
                   </p>
                 </div>
               </div>
               <div class="h-auto w-full bg-yellow-200 p-3 lg:h-full lg:w-2/5">
-                <div class="my-3 text-center md:text-start md:text-xl">
+                <div class="my-3 text-center text-xl md:text-start md:text-2xl">
                   <h1 class="cursor-pointer font-bold">
                     <span class="mx-2 font-normal line-through">$789</span>$678
                   </h1>
                 </div>
                 <h1 class="text-xl md:text-2xl">The Bundle</h1>
-                <ul class="mx-auto my-5 w-5/6 list-inside list-disc">
+                <ul class="mx-auto my-5 w-5/6 list-outside list-disc">
                   <li>Guranteed editing work with our patner, proofed.</li>
                   <li>
                     industry leading courses devolped by professionals for
@@ -249,7 +247,7 @@
                   <li>One-on-one support from our best in-class tutot team</li>
                 </ul>
                 <h1
-                  class="mb-3 text-center text-xl font-bold text-black md:text-start"
+                  class="text-center text-xl font-bold text-black lg:text-start"
                 >
                   <i
                     class="bi bi-star-fill me-1 cursor-pointer text-yellow-500"
@@ -257,7 +255,7 @@
                   >Trustpilot
                 </h1>
                 <div
-                  class="w-full cursor-pointer text-center text-white md:text-start"
+                  class="my-5 w-full cursor-pointer text-center text-white lg:text-start"
                 >
                   <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
                   <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
@@ -265,24 +263,22 @@
                   <i class="bi bi-star-fill bg-yellow-500 p-2"></i>
                   <i class="bi bi-star-half bg-yellow-500 p-2"></i>
                 </div>
-                <h2
-                  class="mb-5 mt-3 text-center font-bold md:w-full md:text-start"
-                >
+                <h2 class="my-5 text-center font-bold md:w-full lg:text-start">
                   TrustScore 4.7 | 417 reviews
                 </h2>
-                <div class="flex justify-center md:justify-start">
+                <div class="flex justify-center lg:justify-start">
                   <a
-                    class="mx-1 rounded-full border border-primary-color bg-primary-color px-2 py-1 text-sm text-yellow-200 hover:bg-secondary-color sm:px-4 sm:py-2 sm:text-base"
+                    class="mx-1 rounded-full border border-primary-color bg-primary-color px-4 py-2 text-sm text-yellow-200 hover:bg-secondary-color sm:text-base"
                     href="#"
                     >Buy Now</a
                   >
                   <a
-                    class="mx-1 rounded-full border border-primary-color px-2 py-1 text-sm hover:bg-yellow-100 sm:px-4 sm:py-2 sm:text-base"
+                    class="mx-1 rounded-full border border-primary-color px-4 py-2 text-sm hover:bg-yellow-100 sm:text-base"
                     href="#"
                     >Learn More</a
                   >
                 </div>
-                <p class="mb-3 mt-5 cursor-pointer text-center md:text-start">
+                <p class="my-5 cursor-pointer text-center md:text-start">
                   Buy now pay later with <a href="#" class="font-bold">Klama</a>
                 </p>
               </div>
@@ -297,15 +293,17 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6 text-white">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
             <h1 class="text-3xl md:text-4xl lg:text-5xl">
               It's Knowadays Or Never
             </h1>
-            <p class="my-3 text-sm font-thin md:text-lg lg:my-7">
+            <p class="my-5 text-sm font-thin md:text-lg lg:my-7">
               providing industry-leading courses that deliver new way of
               working.
             </p>
-            <a class="rounded-full bg-yellow-200 px-4 py-2 text-black" href="#"
+            <a
+              class="my-5 rounded-full bg-yellow-200 px-4 py-2 text-black"
+              href="#"
               >Try for free</a
             >
           </div>
@@ -317,45 +315,45 @@
       <!-- sixth main section start -->
 
       <section>
-        <div class="mx-auto w-5/6">
+        <div class="mx-auto w-11/12 md:w-5/6">
           <div
             class="grid grid-flow-row grid-cols-1 grid-rows-6 gap-2 text-center text-sm font-thin text-white sm:grid-cols-2 sm:grid-rows-3 md:gap-3 md:text-base lg:grid-cols-3 lg:grid-rows-2 lg:gap-5"
           >
             <div>
               <i class="bi bi-book grid-cols-1 text-9xl"></i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Leading courses providing comprehensive knowledge and training.
               </p>
             </div>
             <div>
               <i class="bi bi-headset grid-cols-1 text-9xl"></i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Enjoy outstanding support, expert guidance,and one-on-one
                 feedback.
               </p>
             </div>
             <div>
               <i class="bi bi-wallet grid-cols-1 text-9xl"></i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Learning new skills that let you balance earning with living.
               </p>
             </div>
             <div>
               <i class="bi bi-pencil grid-cols-1 text-9xl"> </i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Enjoy the freedom of career that adapts itself to your
                 priorities.
               </p>
             </div>
             <div>
               <i class="bi bi-stopwatch grid-cols-1 text-9xl"></i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Work for yourself and choose how you spend your time.
               </p>
             </div>
             <div>
               <i class="bi bi-menu-down grid-cols-1 text-9xl"></i>
-              <p class="mb-5 mt-7 text-start">
+              <p class="my-7 text-start">
                 Kick off your new career with opportunities from our patners.
               </p>
             </div>
@@ -369,7 +367,7 @@
 
       <section>
         <div class="my-7">
-          <div class="mx-auto w-5/6 text-white">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
             <h1 class="text-3xl md:text-4xl lg:text-5xl">
               Student Success Stories
             </h1>
@@ -385,15 +383,17 @@
       <!-- eight main section start -->
 
       <section>
-        <div class="my-5">
-          <div class="mx-auto w-5/6 columns-1 lg:columns-3">
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+        <div class="my-7">
+          <div
+            class="mx-auto grid w-11/12 grid-cols-1 grid-rows-3 gap-3 md:w-5/6 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-1"
+          >
+            <div class="mb-3 bg-white px-5 py-10 text-center md:py-3">
               <img
                 class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
                 src="./image/indexphoto/indexphoto5.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Heylay</h1>
+              <h1 class="my-3 text-base">Heylay</h1>
               <h2 class="text-lg">Extra Earnings</h2>
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -419,7 +419,7 @@
                 src="./image/indexphoto/indexphoto6.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Heylay</h1>
+              <h1 class="my-3 text-base">Heylay</h1>
               <h2 class="text-lg">Extra Earnings</h2>
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -445,7 +445,7 @@
                 src="./image/indexphoto/indexphoto7.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Heylay</h1>
+              <h1 class="my-3 text-base">Heylay</h1>
               <h2 class="text-lg">Extra Earnings</h2>
               <p class="my-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -478,14 +478,14 @@
 
       <section>
         <div
-          class="mx-auto my-5 flex h-100vh w-5/6 flex-col items-center justify-center bg-yellow-200"
+          class="mx-auto my-5 flex h-100vh w-11/12 flex-col items-center justify-center bg-yellow-200 md:w-5/6"
         >
           <h1
-            class="mt-10 text-center text-5xl text-primary-color md:text-7xl lg:text-8xl"
+            class="text-center text-4xl text-primary-color sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Start Your Journey
           </h1>
-          <p class="my-5 text-center text-base lg:text-lg">
+          <p class="my-5 text-center text-base md:text-lg">
             Sign up for a no-strings-attached free trial today!
           </p>
           <a
@@ -508,7 +508,7 @@
 
       <section>
         <div class="my-20 border-b-2 border-t-4">
-          <div class="mx-auto w-5/6 py-10 text-white">
+          <div class="mx-auto w-11/12 py-10 text-white md:w-5/6">
             <i class="bi bi-alt cursor-pointer text-xl"></i>
             <div
               class="mt-5 grid-flow-col md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-flow-row lg:grid-cols-4"
@@ -571,7 +571,9 @@
 
       <section>
         <div class="my-10">
-          <div class="mx-auto w-5/6 text-white md:flex md:justify-between">
+          <div
+            class="mx-auto w-11/12 text-white md:flex md:w-5/6 md:justify-between"
+          >
             <div class="w-1/2">
               <div class="my-5 columns-1 md:my-0 md:columns-2">
                 <h1 class="mb-3 cursor-pointer">@ 2023 Knowadays</h1>
@@ -590,8 +592,35 @@
       </section>
 
       <!-- footer second section end -->
+
+      <!-- footer third section start -->
+
+      <section>
+        <a href="#top">
+          <div
+            class="fixed bottom-7 right-7 text-3xl text-white hover:text-gray-300"
+          >
+            <i class="bi bi-arrow-up-circle"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- footer third section end -->
     </footer>
 
     <!-- footer end -->
+
+    <!-- javascript start -->
+
+    <script>
+      const navButton = document.querySelector("#nav-button");
+      const navToggle = document.querySelector("#nav-toggle");
+
+      navButton.onclick = () => {
+        navToggle.classList.toggle("translate-x-full");
+      };
+    </script>
+
+    <!-- javascript end -->
   </body>
 </html>
