@@ -17,53 +17,51 @@
       <!-- header section start -->
 
       <section>
-        <div
-          class="relative mx-auto flex w-5/6 items-center justify-between py-4 text-white"
-        >
+        <div class="fixed h-auto w-full bg-primary-color">
           <div
-            class="flex cursor-pointer items-center justify-center gap-2 font-bold"
+            class="relative mx-auto flex w-11/12 items-center justify-between py-4 text-white md:w-5/6"
           >
-            <i class="bi bi-alt text-xl"></i>
-            <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
-          </div>
-          <div
-            class="absolute -bottom-full flex h-full w-full items-center justify-center gap-2 bg-primary-color text-xs md:text-sm lg:relative lg:block lg:h-auto lg:w-auto lg:text-base lg:font-thin"
-          >
-            <a
-              class="l w-full text-center hover:text-gray-300 lg:mx-2"
-              href="index.html"
-              >Courses</a
+            <div
+              class="flex cursor-pointer items-center justify-center gap-2 font-bold"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="costumer.html"
-              >Success Stories</a
+              <i class="bi bi-alt text-sm sm:text-lg"></i>
+              <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
+            </div>
+            <div id="nav-button">
+              <button class="hover:text-gray-300">
+                <i class="bi bi-list sm:text-xl md:hidden"></i>
+              </button>
+            </div>
+            <div
+              class="absolute top-full flex w-full translate-x-full flex-col bg-primary-color text-base duration-200 ease-in-out md:relative md:block md:w-auto md:translate-x-0 md:text-sm lg:text-base lg:font-thin"
+              id="nav-toggle"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="product.html"
-              >Guranteed Work</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="about.html"
-              >Resources</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="blog.html"
-              >Blog</a
-            >
-          </div>
-          <div
-            class="flex items-center justify-center gap-2 text-xs font-thin sm:text-sm md:gap-10 md:text-lg"
-          >
-            <a class="hover:text-cyan-300" href="#">Sign in</a>
-            <a
-              class="rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
-              href="#"
-              >Try For Free</a
-            >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="index.html"
+                >Courses</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="costumer.html"
+                >Success Stories</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="product.html"
+                >Guranteed Work</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="about.html"
+                >Resources</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -75,15 +73,19 @@
 
     <!-- main start -->
 
-    <main>
+    <main id="top">
       <!-- first main section start -->
 
       <section>
-        <div class="mb-10 mt-20 lg:mt-10">
-          <div class="mx-auto w-5/6 font-thin text-white">
-            <a href="index.html">Home</a>
+        <div class="pt-20">
+          <div class="mx-auto w-11/12 font-thin text-white md:w-5/6">
+            <a class="cursor-pointer hover:text-gray-300" href="index.html"
+              >Home</a
             >
-            <a href="costumer.html">Success Stories</a>
+            <span class="mx-1 cursor-pointer">></span>
+            <a class="cursor-pointer hover:text-gray-300" href="costumer.html"
+              >Success Stories</a
+            >
           </div>
         </div>
       </section>
@@ -94,7 +96,7 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6 text-white">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
             <h1 class="mb-3 text-3xl md:text-4xl lg:text-5xl">
               Knowadays Success Stories
             </h1>
@@ -115,281 +117,242 @@
       <section>
         <div class="my-5">
           <div
-            class="mx-auto mb-3 w-5/6 grid-rows-5 md:mb-0 md:grid md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:grid-rows-3"
+            class="mx-auto my-5 grid w-11/12 gap-3 md:w-5/6 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3"
           >
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto1.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Wesley Singleton</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto2.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Roger Schultz</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto3.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Bryan Becker</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto4.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Lina Ortega</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto5.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Hannah Higgins</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto6.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Lily Manning</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto7.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Evan Drake</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto8.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Marie West</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-            <div class="mb-3 bg-white px-5 py-10 text-center">
+            <div class="bg-white px-5 py-10 text-center md:px-7">
               <img
-                class="mx-auto h-16 w-16 cursor-pointer rounded-full object-cover object-center"
+                class="mx-auto h-20 w-20 cursor-pointer rounded-full object-cover object-center shadow-inner shadow-black"
                 src="./image/costumerphoto/costumerphoto9.avif"
                 alt=""
               />
-              <h1 class="my-2 text-base">Isabel McGuire</h1>
-              <h2 class="text-lg">Extra Earnings</h2>
-              <p class="my-2">
+              <h1 class="my-3 text-lg font-bold">Wesley Singleton</h1>
+              <h2 class="text-xl">Extra Earnings</h2>
+              <p class="my-3 text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Doloremque culpa necessitatibus repudiandae autem ab accusamus
                 sunt enim vel iure adipisci? Deleniti laudantium, fuga sequi
                 optio ex dignissimos cum dolorum necessitatibus?
               </p>
-              <p class="mb-7">
+              <p class="my-5 text-start">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Pariatur explicabo fugit quo, illo quia voluptates autem labore
                 provident enim alias libero veritatis atque. Autem sit cum quam
                 recusandae fuga cupiditate?
               </p>
               <a
-                class="rounded-full border-none bg-primary-color px-4 py-2 text-lg text-white hover:bg-secondary-color"
+                class="rounded-full border-none bg-primary-color px-4 py-2 text-white hover:bg-secondary-color"
                 href="#"
                 >Read More</a
               >
             </div>
-          </div>
-        </div>
-        <div class="my-5">
-          <div class="mx-auto w-5/6">
-            <div
-              class="flex items-center justify-center text-xs text-white sm:text-base lg:justify-start"
-            >
-              <a
-                class="me-0 rounded-full border border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >1</a
-              >
-              <a
-                class="me-0 rounded-full border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >2</a
-              >
-              <a
-                class="me-0 rounded-full border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >3</a
-              >
-              <a
-                class="me-0 rounded-full border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >4</a
-              >
-              <a
-                class="me-0 rounded-full border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >5</a
-              >
-              <a
-                class="me-0 rounded-full border border-white px-2 py-1 text-center sm:me-1 sm:px-4 sm:py-2"
-                href="#"
-                >Next Page</a
-              >
-            </div>
-            s
           </div>
         </div>
       </section>
@@ -399,29 +362,70 @@
       <!-- fourth main section start -->
 
       <section>
+        <div class="my-5">
+          <div class="mx-auto w-11/12 md:w-5/6">
+            <div
+              class="flex items-center justify-center gap-0 text-center text-base text-white sm:gap-2 sm:text-base md:gap-3 lg:justify-start"
+            >
+              <a
+                class="rounded-full border border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >1</a
+              >
+              <a
+                class="rounded-full border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >2</a
+              >
+              <a
+                class="rounded-full border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >3</a
+              >
+              <a
+                class="rounded-full border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >4</a
+              >
+              <a
+                class="rounded-full border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >5</a
+              >
+              <a
+                class="rounded-full border border-white px-2 py-1 sm:px-4 sm:py-2"
+                href="#"
+                >Next Page</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- fourth main section end -->
+
+      <!-- fifth main section start -->
+
+      <section>
         <div
-          class="mx-auto my-5 flex h-100vh w-5/6 flex-col items-center justify-center bg-yellow-200"
+          class="mx-auto my-5 flex h-100vh w-11/12 flex-col items-center justify-center bg-yellow-200 text-center text-primary-color md:w-5/6"
         >
-          <h1
-            class="mt-10 text-center text-3xl text-primary-color sm:text-5xl lg:text-7xl"
-          >
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             Time for a change?
           </h1>
-          <p
-            class="mb-10 mt-5 text-center text-sm text-primary-color sm:text-base lg:text-lg"
-          >
+          <p class="my-5 text-base md:text-lg">
             Sign up for a Knowadays free trial-it's your first step towards a
             new career
           </p>
           <a
-            class="rounded-full bg-primary-color px-4 py-2 text-sm text-yellow-200 hover:bg-secondary-color hover:text-yellow-100 sm:text-base"
+            class="rounded-full bg-primary-color px-4 py-2 text-yellow-200 hover:bg-secondary-color hover:text-yellow-100"
             href="#"
             >Try for free</a
           >
         </div>
       </section>
 
-      <!-- fourth main section end -->
+      <!-- fifth main section end -->
     </main>
 
     <!-- main end -->
@@ -433,7 +437,7 @@
 
       <section>
         <div class="my-20 border-b-2 border-t-4">
-          <div class="mx-auto w-5/6 py-10 text-white">
+          <div class="mx-auto w-11/12 py-10 text-white md:w-5/6">
             <i class="bi bi-alt cursor-pointer text-xl"></i>
             <div
               class="mt-5 grid-flow-col md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-flow-row lg:grid-cols-4"
@@ -496,7 +500,9 @@
 
       <section>
         <div class="my-10">
-          <div class="mx-auto w-5/6 text-white md:flex md:justify-between">
+          <div
+            class="mx-auto w-11/12 text-white md:flex md:w-5/6 md:justify-between"
+          >
             <div class="w-1/2">
               <div class="my-5 columns-1 md:my-0 md:columns-2">
                 <h1 class="mb-3 cursor-pointer">@ 2023 Knowadays</h1>
@@ -515,8 +521,35 @@
       </section>
 
       <!-- footer second section end -->
+
+      <!-- footer third section start -->
+
+      <section>
+        <a href="#top">
+          <div
+            class="fixed bottom-7 right-7 text-3xl text-white hover:text-gray-300"
+          >
+            <i class="bi bi-arrow-up-circle"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- footer third section end -->
     </footer>
 
     <!-- footer end -->
+
+    <!-- javascript start -->
+
+    <script>
+      const navButton = document.querySelector("#nav-button");
+      const navToggle = document.querySelector("#nav-toggle");
+
+      navButton.onclick = () => {
+        navToggle.classList.toggle("translate-x-full");
+      };
+    </script>
+
+    <!-- javascript end -->
   </body>
 </html>

@@ -13,57 +13,55 @@
   <body class="bg-primary-color font-sans">
     <!-- header start -->
 
-    <header class="bg-primary-color">
+    <header>
       <!-- header section start -->
 
       <section>
-        <div
-          class="relative mx-auto flex w-5/6 items-center justify-between py-4 text-white"
-        >
+        <div class="fixed h-auto w-full bg-primary-color">
           <div
-            class="flex cursor-pointer items-center justify-center gap-2 font-bold"
+            class="relative mx-auto flex w-11/12 items-center justify-between py-4 text-white md:w-5/6"
           >
-            <i class="bi bi-alt text-xl"></i>
-            <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
-          </div>
-          <div
-            class="absolute -bottom-full flex h-full w-full items-center justify-center gap-2 bg-primary-color text-xs md:text-sm lg:relative lg:block lg:h-auto lg:w-auto lg:text-base lg:font-thin"
-          >
-            <a
-              class="l w-full text-center hover:text-gray-300 lg:mx-2"
-              href="index.html"
-              >Courses</a
+            <div
+              class="flex cursor-pointer items-center justify-center gap-2 font-bold"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="costumer.html"
-              >Success Stories</a
+              <i class="bi bi-alt text-sm sm:text-lg"></i>
+              <h1 class="text-sm font-bold sm:text-xl">Knowadays</h1>
+            </div>
+            <div id="nav-button">
+              <button class="hover:text-gray-300">
+                <i class="bi bi-list sm:text-xl md:hidden"></i>
+              </button>
+            </div>
+            <div
+              class="absolute top-full flex w-full translate-x-full flex-col bg-primary-color text-base duration-200 ease-in-out md:relative md:block md:w-auto md:translate-x-0 md:text-sm lg:text-base lg:font-thin"
+              id="nav-toggle"
             >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="product.html"
-              >Guranteed Work</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="about.html"
-              >Resources</a
-            >
-            <a
-              class="w-full text-center hover:text-gray-300 lg:mx-2"
-              href="blog.html"
-              >Blog</a
-            >
-          </div>
-          <div
-            class="flex items-center justify-center gap-2 text-xs font-thin sm:text-sm md:gap-10 md:text-lg"
-          >
-            <a class="hover:text-cyan-300" href="#">Sign in</a>
-            <a
-              class="rounded-full bg-green-400 px-2 text-black hover:bg-green-500 hover:text-white lg:px-4 lg:py-1"
-              href="#"
-              >Try For Free</a
-            >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="index.html"
+                >Courses</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="costumer.html"
+                >Success Stories</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="product.html"
+                >Guranteed Work</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="about.html"
+                >Resources</a
+              >
+              <a
+                class="my-3 w-full p-2 text-center hover:text-gray-300 lg:mx-1"
+                href="blog.html"
+                >Blog</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -75,15 +73,19 @@
 
     <!-- main start -->
 
-    <main>
+    <main id="top">
       <!-- first main section start -->
 
       <section>
-        <div class="mb-10 mt-20 lg:mt-10">
-          <div class="mx-auto w-5/6 font-thin text-white">
-            <a href="index.html">Home</a>
+        <div class="pt-20">
+          <div class="mx-auto w-11/12 font-thin text-white md:w-5/6">
+            <a class="cursor-pointer hover:text-gray-300" href="index.html"
+              >Home</a
             >
-            <a href="blog.html">Blog</a>
+            <span class="mx-1 cursor-pointer">></span>
+            <a class="cursor-pointer hover:text-gray-300" href="costumer.html"
+              >Blog</a
+            >
           </div>
         </div>
       </section>
@@ -94,9 +96,11 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6 text-white">
-            <h1 class="text-3xl">Welcome to the Knowadays blog</h1>
-            <p class="my-2 text-lg">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl">
+              Welcome to the Knowadays blog
+            </h1>
+            <p class="my-5 text-lg">
               Inspiring stories, inside tips, and smart hacks for mordern
               working - you'll find them all here.
             </p>
@@ -110,25 +114,42 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6 text-white">
-            <div class="columns-1 text-center lg:columns-3">
+          <div class="mx-auto w-11/12 text-white md:w-5/6">
+            <div
+              class="grid grid-cols-1 grid-rows-3 gap-3 text-center lg:grid-cols-3 lg:grid-rows-1"
+            >
               <div
                 style="background-image: url(./image/blogphoto/blogphoto1.avif)"
-                class="mb-3 flex h-75vh items-center justify-center bg-cover bg-center bg-no-repeat lg:mb-0"
+                class="h-75vh bg-cover bg-center bg-no-repeat"
               >
-                <h1 class="text-4xl">Success Stories</h1>
+                <div
+                  style="background-color: rgba(0, 0, 0, 0.4)"
+                  class="flex h-full items-center justify-center"
+                >
+                  <h1 class="text-4xl">Success Stories</h1>
+                </div>
               </div>
               <div
                 style="background-image: url(./image/blogphoto/blogphoto2.avif)"
-                class="mb-3 flex h-75vh items-center justify-center bg-cover bg-center bg-no-repeat lg:mb-0"
+                class="h-75vh bg-cover bg-center bg-no-repeat"
               >
-                <h1 class="text-4xl">Freelance Tips</h1>
+                <div
+                  style="background-color: rgba(0, 0, 0, 0.4)"
+                  class="flex h-full items-center justify-center"
+                >
+                  <h1 class="text-4xl">Freelance Tips</h1>
+                </div>
               </div>
               <div
                 style="background-image: url(./image/blogphoto/blogphoto3.avif)"
-                class="mb-3 flex h-75vh items-center justify-center bg-cover bg-center bg-no-repeat lg:mb-0"
+                class="h-75vh bg-cover bg-center bg-no-repeat"
               >
-                <h1 class="text-4xl">Proofreading and Editing Tips</h1>
+                <div
+                  style="background-color: rgba(0, 0, 0, 0.4)"
+                  class="flex h-full items-center justify-center"
+                >
+                  <h1 class="text-4xl">Proofreading and Editing Tips</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -141,7 +162,7 @@
 
       <section>
         <div class="my-5">
-          <div class="mx-auto w-5/6">
+          <div class="mx-auto w-11/12 md:w-5/6">
             <div
               class="grid grid-cols-1 grid-rows-6 gap-3 text-white lg:grid-cols-3 lg:grid-rows-2 lg:gap-5"
             >
@@ -153,8 +174,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         How to Become a Court Transcript Proofreader
@@ -190,8 +211,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         12 Fascinating Rhetorical Devices (And How to Use Theme)
@@ -225,8 +246,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         How to Become Freelance Legal Editor
@@ -263,8 +284,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         5 Tips for Starting a Career in Editing with No
@@ -302,8 +323,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         Copy Editing vs Proofreading: What's the Difference?
@@ -338,8 +359,8 @@
                     alt=""
                   />
                 </div>
-                <div class="bg-primary-color">
-                  <div class="bg-primary-color">
+                <div>
+                  <div>
                     <div>
                       <h1 class="my-5 text-3xl">
                         5 Tips for Starting a Career in Proofreading with No
@@ -385,7 +406,7 @@
 
       <section>
         <div class="my-20 border-b-2 border-t-4">
-          <div class="mx-auto w-5/6 py-10 text-white">
+          <div class="mx-auto w-11/12 py-10 text-white md:w-5/6">
             <i class="bi bi-alt cursor-pointer text-xl"></i>
             <div
               class="mt-5 grid-flow-col md:grid md:grid-cols-2 md:grid-rows-2 lg:grid-flow-row lg:grid-cols-4"
@@ -448,7 +469,9 @@
 
       <section>
         <div class="my-10">
-          <div class="mx-auto w-5/6 text-white md:flex md:justify-between">
+          <div
+            class="mx-auto w-11/12 text-white md:flex md:w-5/6 md:justify-between"
+          >
             <div class="w-1/2">
               <div class="my-5 columns-1 md:my-0 md:columns-2">
                 <h1 class="mb-3 cursor-pointer">@ 2023 Knowadays</h1>
@@ -467,8 +490,35 @@
       </section>
 
       <!-- footer second section end -->
+
+      <!-- footer third section start -->
+
+      <section>
+        <a href="#top">
+          <div
+            class="fixed bottom-7 right-7 text-3xl text-white hover:text-gray-300"
+          >
+            <i class="bi bi-arrow-up-circle"></i>
+          </div>
+        </a>
+      </section>
+
+      <!-- footer third section end -->
     </footer>
 
     <!-- footer end -->
+
+    <!-- javascript start -->
+
+    <script>
+      const navButton = document.querySelector("#nav-button");
+      const navToggle = document.querySelector("#nav-toggle");
+
+      navButton.onclick = () => {
+        navToggle.classList.toggle("translate-x-full");
+      };
+    </script>
+
+    <!-- javascript end -->
   </body>
 </html>
