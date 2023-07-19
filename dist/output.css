@@ -546,12 +546,8 @@ video {
   top: 100%;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-20 {
-  z-index: 20;
+.z-10 {
+  z-index: 10;
 }
 
 .mx-1 {
@@ -1157,6 +1153,10 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+  z-index: 0 !important;
 }
 
 .hover\:bg-cyan-500:hover {
