@@ -19,6 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("prettier-plugin-tailwindcss")],
-  plugins: [require("autoprefixer")],
+  plugins: [require("prettier-plugin-tailwindcss"), require("autoprefixer")],
 };
